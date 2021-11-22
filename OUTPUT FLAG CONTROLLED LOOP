@@ -1,0 +1,12 @@
+Enter a temperature(>= 200 to stop) : 999
+ERROR! NO input, NO output!!!
+
+Enter a temperature(>= 200 to stop) : 78
+Enter a temperature(>= 200 to stop) : 89
+Enter a temperature(>= 200 to stop) : 80
+Enter a temperature(>= 200 to stop) : 77
+Enter a temperature(>= 200 to stop) : 67
+Enter a temperature(>= 200 to stop) : 85
+Enter a temperature(>= 200 to stop) : 333
+
+The average temperature is:  79.33
