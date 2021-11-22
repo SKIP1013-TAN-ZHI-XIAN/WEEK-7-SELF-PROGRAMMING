@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import java.lang.Math;
 
-class Cashier1 {
+class Cashier {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
