@@ -76,8 +76,8 @@ class BankAccount {
 				{
 					System.out.println("Access Failed");	
 				}
-				counter = counter +1;
-				System.out.println("Right Here!!! Counter :"+(counter + 1));	
+				counter = counter + 1;
+				System.out.println("Right Here!!! Counter : "+ (counter + 1));	
 				
 				if (counter >= 3) 
 				{
