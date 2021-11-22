@@ -27,7 +27,7 @@ class Cashier1 {
         		        double payment = in.nextDouble();
         		        double change = payment - purchase;
         		        System.out.println("Your change is: $ " + change);
-        		        int treeCount = 10;  //lot contains 10 trees
+        		        int treeCount = 10;  // lot contains 10 trees
         		        treeCount--;  // remove tree from inventory
 
                         if (treeCount == 5) {
