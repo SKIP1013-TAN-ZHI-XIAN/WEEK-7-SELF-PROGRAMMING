@@ -1,0 +1,36 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+class FlagControlledLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Declarations
+        Scanner input = new Scanner(System.in);
+        double temp;
+        double sum = 0;
+        double avg;
+        int count = 0;
+        boolean isSafe = true;  // initialize flag
+        
+        while (isSafe) {  // test flag
+        	System.out.print("Enter a temperature(>= 200 to stop) : ");
+            temp = input.nextDouble();
+            if (temp >=  200)
+                isSafe = false; //update flag
+            else {
+                sum = sum + temp;
+                count = count + 1;
+            }
+        }
+        if(count != 0) {
+            avg = sum / count;
+            System.out.printf("\nThe average temperature is: %6.2f", avg);
+            System.out.println();
+        }
+        else
+            System.out.println("ERROR! NO input, NO output!!!");
+	}
+
+}
