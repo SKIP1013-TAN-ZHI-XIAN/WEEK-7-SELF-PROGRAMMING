@@ -86,7 +86,7 @@ class BankAccount {
 					System.exit(0);
 				}
 				
-			}while(access==true);
+			} while (access == true);
 	}
 
 }
