@@ -1,0 +1,45 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+import java.lang.Math;
+
+class Cashier1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+        
+        boolean done = false;
+
+        while (!done) {
+        	System.out.println("Please enter price of tree: ");
+        	double purchase = in.nextDouble();
+
+        	System.out.println("Is order complete? Type: Y/N");
+        	String choice = in.next();
+
+        	if (choice.equalsIgnoreCase("y")) 
+        	{
+        		System.out.println("Your total is: " + purchase);
+        		System.out.println("<--------------------------->");
+        		System.out.println("Please enter payment amount: ");
+        		double payment = in.nextDouble();
+        		double change = payment - purchase;
+        		System.out.println("Your change is: $ " + change);
+        		int treeCount = 10;  //lot contains 10 trees
+        		treeCount--;  // remove tree from inventory
+
+            if (treeCount == 5) {
+                System.out.println("You're down to 5 Christmas Trees" );
+            }
+        } 
+        	else if (choice.equalsIgnoreCase("n")) {
+        		System.out.println("Please add another item");
+        		System.out.println("Enter price of the next tree: ");
+        	}
+        }
+
+	}
+
+}
