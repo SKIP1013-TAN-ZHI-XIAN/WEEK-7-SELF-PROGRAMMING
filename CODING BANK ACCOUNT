@@ -49,12 +49,12 @@ class BankAccount {
 					System.out.println("You have RM500 in you account");
 				} else if (response == 2) {
 					System.out.println("How much would you like to deposit?");
-					 num1=input.nextInt();
+					 num1 = input.nextInt();
 					total = 500 + num1;
 					System.out.println("You have RM" + total + " after you deposit. Thank you.");
 				} else if (response == 3) {
 					System.out.println("How much would you like to withdraw?");
-					num1=input.nextInt();
+					num1 = input.nextInt();
 					total = 500 - num1;
 					System.out.println("You have RM" + total + " left after your withdraw. Thank you.");
 				} else if (response == 4) {
