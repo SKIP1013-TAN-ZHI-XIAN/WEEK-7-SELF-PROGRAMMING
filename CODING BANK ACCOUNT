@@ -46,7 +46,7 @@ class BankAccount {
 				
 				if (response == 1) {
 					System.out.println("Checking Amount Balance...Please Wait");
-					System.out.println("You have RM500 in you account");
+					System.out.println("You have RM500 in you account.");
 				} else if (response == 2) {
 					System.out.println("How much would you like to deposit?");
 					 num1 = input.nextInt();
