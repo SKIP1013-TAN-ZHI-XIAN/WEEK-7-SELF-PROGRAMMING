@@ -15,41 +15,41 @@ class VendingMachine {
 		double price2 = 2;
 		double price3 = 3;
 		double price4 = 3.50;
-        double money;
-        double balance;
-        int choice; 
-        String select;
+                double money;
+                double balance;
+                int choice; 
+                String select;
 		
-        do {
-            System.out.print("Please insert money : RM");
-            money = sc.nextDouble();
+                do {
+                    System.out.print("Please insert money : RM");
+                    money = sc.nextDouble();
             
-            	if(money > 1.2)
-            	{
-            		System.out.println("What drinks are you looking for?");
-            		System.out.print("Select: 1 or 2 or 3 or 4\n");
-            		select=sc.nextLine();
-            		choice = sc.nextInt();
+            	        if(money > 1.2)
+            	        {
+            		        System.out.println("What drinks are you looking for?");
+            		        System.out.print("Select: 1 or 2 or 3 or 4\n");
+            		        select=sc.nextLine();
+            		        choice = sc.nextInt();
                 
-            		if (choice == 1) {
-            			balance = money - price1;
-            			System.out.println("Here is your Milk and your balance : " + balance);
-                    } else if (choice == 2) {
-                    	balance = money - price2;
-                    	System.out.println("Here is your Apple Juice and your balance : " + balance);
-                    } else if (choice == 3) {
-                    	balance = money - price3;
-                    	System.out.println("Here is your Watermelon Juice and your balance : " + balance);
-                    } else if (choice == 4) {
-                    	balance = money - price4;
-                    	System.out.println("Here is your Coffee and your balance : " + balance);
-                    } else {
-                    	System.out.println("Invalid");
-                    }
+            		        if (choice == 1) {
+            			        balance = money - price1;
+            			        System.out.println("Here is your Milk and your balance : " + balance);
+                                } else if (choice == 2) {
+                    	                balance = money - price2;
+                    	                System.out.println("Here is your Apple Juice and your balance : " + balance);
+                                } else if (choice == 3) {
+                    	                balance = money - price3;
+                    	                System.out.println("Here is your Watermelon Juice and your balance : " + balance);
+                                } else if (choice == 4) {
+                    	                balance = money - price4;
+                    	                System.out.println("Here is your Coffee and your balance : " + balance);
+                                } else {
+                    	                System.out.println("Invalid");
+                                }
     			} else {
     				System.out.println("Your money is not enough!");	
     			}
-        } while (access == true);
+                } while (access == true);
 	}
 
 }
