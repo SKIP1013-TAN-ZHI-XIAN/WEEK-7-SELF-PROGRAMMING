@@ -91,6 +91,57 @@ Please enter 4
 What would you like to do next?
 3
 How much would you like to withdraw?
-920
-You have RM-420 left after your withdraw. Thank you.
+99
+You have RM401 left after your withdraw. Thank you.
+
+Welcome to Aman Bank
+Please insert your name : Tan Zhi Xian
+Please enter your card ID : 999999
+Please enter your password : 999
+Access Granted
+Check Account Balance
+Please enter 1
+
+
+Deposit Money
+Please enter 2
+
+
+Withdraw Money
+Please enter 3
+
+
+Transfer Money
+Please enter 4
+
+
+What would you like to do next?
+4
+How much would you like to transfer?
+672
 Error! You have overdraw.
+
+Welcome to Aman Bank
+Please insert your name : Tan Zhi Xian
+Please enter your card ID : 999999
+Please enter your password : 999
+Access Granted
+Check Account Balance
+Please enter 1
+
+
+Deposit Money
+Please enter 2
+
+
+Withdraw Money
+Please enter 3
+
+
+Transfer Money
+Please enter 4
+
+
+What would you like to do next?
+6
+Invalid
