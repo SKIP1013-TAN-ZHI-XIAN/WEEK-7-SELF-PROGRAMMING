@@ -46,7 +46,7 @@ class BankAccount {
 				
 				if (response == 1) {
 					System.out.println("Checking Amount Balance...Please Wait");
-					System.out.println("You have RM500 in you account.");
+					System.out.println("You have RM500 in you account");
 				} else if (response == 2) {
 					System.out.println("How much would you like to deposit?");
 					 num1 = input.nextInt();
@@ -57,17 +57,20 @@ class BankAccount {
 					num1 = input.nextInt();
 					total = 500 - num1;
 					System.out.println("You have RM" + total + " left after your withdraw. Thank you.");
-				    if (num1 > 500) {
-						System.out.println("Error! You have overdraw.");
-				} else if (response == 4) {
+				} else if (response == 4)
+				{
 					System.out.println("How much would you like to transfer?");
-					num2 = input.nextInt();
+					num2=input.nextInt();
+					if (num2 > 500) {
+						System.out.println("Error! You have overdraw.");
+					}
+					else {
 					total = 500 - num2;
 					System.out.println("You have RM" + total + " left after your transfer. Thank you.");
-					if (num2 > 500) {
-						System.out.println("Error! Your balance is not enough.");
 					}
-				} else {
+				} 
+				else 
+				{
 					System.out.println("Invalid");
 				}
 				System.exit(0);
@@ -77,7 +80,7 @@ class BankAccount {
 					System.out.println("Access Failed");	
 				}
 				counter = counter + 1;
-				System.out.println("Right Here!!! Counter : " + (counter + 1));	
+				System.out.println("Right Here!!! Counter : "+ counter);	
 				
 				if (counter >= 3) 
 				{
@@ -85,8 +88,8 @@ class BankAccount {
 					System.out.println("3 tries exceeded! You are not allowed to log in.");
 					System.exit(0);
 				}
-			}
-		} while (access == true);
+				
+			}while(access == true);
 	}
 
 }
