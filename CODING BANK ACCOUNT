@@ -86,7 +86,7 @@ class BankAccount {
 					System.out.println("3 tries exceeded! You are not allowed to log in.");
 					System.exit(0);
 				}
-			} while(access == true);
+			} while (access == true);
 	}
 
 }
