@@ -30,7 +30,7 @@ class BankAccount {
 			System.out.print("Please enter your password : ");
 			password = input.next();
 			
-				if (cardNo.equals("999999") && password.equals("999"))
+			if (cardNo.equals("999999") && password.equals("999"))
 			{
 				System.out.println("Access Granted");	
 				System.out.print("Check Account Balance\n");
