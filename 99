@@ -1,0 +1,31 @@
+INP
+ STA input1
+ LDA input1
+ SUB five
+ BRP test1
+ LDA B
+ OUT
+ HLT
+test1 LDA input1
+ LDA ten
+ SUB input1
+ BRP test2
+ LDA B
+ OUT
+ HLT
+test2 LDA input1
+loop STA input1
+ ADD total
+STA total
+ LDA input1
+ SUB one
+ BRP loop
+ LDA total
+ OUT
+ HLT
+one DAT 1
+five DAT 5
+ten DAT 10
+input1 DAT
+B DAT -1
+total DAT 0
